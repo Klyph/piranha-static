@@ -77,11 +77,13 @@ a{
 .init-layout .img-section{
 	min-height: 100vh;
 	background-color: #3949AB;
+	/*
 	background: url("../img/svg/login-page-image.svg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	*/
 }
 .init-layout .img-section .img-caption{
 	position: absolute;
@@ -114,43 +116,76 @@ a{
 	height: 100%;
 	width: 100%;
 }
-.auth-form .btn{
-	color: #3949AB;
-	border-radius: 0;
-	border-color:  #3949AB;
-	text-transform: uppercase;
-}
-.auth-form .btn:hover{
-	color: #ffffff;
-	background: #3949AB;
-}
-.auth-footer {
-	position: absolute;
-	bottom: 0;
-	padding: 15px 30px;
-	width: 100%;
-}
-.auth-footer span{
-	color:#888ad8;
-	position: absolute;
-	right: 36px;
-	bottom: 16px;
-	font-size: 12px;
-}
-.form-control {
-    border-radius: 0;
-    border-color: #3949AB;
-    color: #3949AB !important;
-}
-.auth-title{
+.init-layout .auth-section .auth-inputs .auth-title{
 	color:  #3949AB;
 	font-family: Brown Bold, Open Sans, sans-serif;
 	font-size: 30px;
 	font-weight: 100;
 	/*text-transform: uppercase;*/
 }
-.auth-sub-text{
+.init-layout .auth-section .auth-inputs .auth-sub-text{
 	color:#888ad8;
 	font-size: 12px;
 	line-height: 10px;
+}
+.init-layout .auth-section .auth-inputs .auth-form .form-control {
+    border-radius: 0;
+    border-color: #3949AB;
+    color: #3949AB !important;
+}
+.init-layout .auth-section .auth-inputs .auth-form .btn{
+	color: #3949AB;
+	border-radius: 0;
+	border-color:  #3949AB;
+	text-transform: uppercase;
+}
+.init-layout .auth-section .auth-inputs .auth-form .btn:hover{
+	color: #ffffff;
+	background: #3949AB;
+}
+.init-layout .auth-section .auth-footer {
+	position: absolute;
+	bottom: 0;
+	padding: 15px 30px;
+	width: 100%;
+}
+.init-layout .auth-section .auth-footer span{
+	color:#888ad8;
+	position: absolute;
+	right: 36px;
+	bottom: 16px;
+	font-size: 12px;
+}
+.dash-layout .sidebar{
+	height: 100vh;
+	width: 64px;
+	transition: height 0.25s ease-in-out 0s;
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: row;
+	position: fixed;
+	left: 0px;
+	z-index: 300;
+}
+.dash-layout .sidebar .sidebar-items-container{
+	align-items: center;
+	-moz-box-align: center;
+	color: rgb(222, 235, 255);
+	background-color: #3949AB;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	padding: 16px 0px;
+	width: 64px;
+}
+.dash-layout .sidebar .sidebar-items-top{
+	-moz-box-flex: 1;
+	flex: 1 1 0px;
+	padding: 16px 0;
+}
+.dash-layout .sidebar .sidebar-items-bottom{
+	align-self: center;
+	-moz-box-flex: 0;
+	flex-grow: 0;
+	width: 32px;
 }
