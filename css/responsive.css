@@ -1,0 +1,33 @@
+/**
+*   Company: Piranha
+*   Company URL: https://piranhainc.com
+*   Company Location: The Victoria, Plot No. 131, North Labone, Accra-Ghana
+*   Version: 0.0.1
+*
+*   File Purpose: responsive stylesheet
+*
+*   Author: piranha | klyph
+*   Author URL: https://piranhainc.com
+*
+*
+*   Copyright © 2018 piranha INC. unless otherwise stated.
+*/
+
+
+/*patch*/
+@media only screen
+and (max-width : 768px) {
+	/*styles*/
+}
+@media only screen
+and (min-width: 768px){
+	/*styles*/
+}
+@media only screen
+and (min-width : 992px) {
+	/*styles*/
+}
+@media only screen
+and (min-width : 1200px) {
+	/*styles*/
+}

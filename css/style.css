@@ -1,0 +1,156 @@
+/**
+*   Company: Piranha
+*   Company URL: https://piranhainc.com
+*   Company Location: The Victoria, Plot No. 131, North Labone, Accra-Ghana
+*   Version: 0.0.1
+*
+*   File Purpose: General Style-Sheet - piranha portal
+*
+*   This stylesheet leverages on:
+*   Twitter Bootstrap v4.1.1
+*   
+*   
+*
+*   Author: piranha | daawin | klyph
+*   Author URL: kudigo.com
+*
+*
+*   Copyright © 2018 piranha INC. unless otherwise stated.
+*/
+
+/*imports*/
+@import url(bootstrap.min.css);
+
+/*fonts*/
+@font-face{
+	font-family: "Brown Light";
+	font-style:normal;
+	src:url(../fonts/brown-light-webfont.eot);
+	src:url(../fonts/brown-light-webfont.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/brown-light-webfont.woff) format('woff'),
+	url(../fonts/brown-light-webfont.ttf) format('truetype'),
+	url(../fonts/brown-light-webfont.svg#web) format('svg')
+}
+@font-face{
+	font-family:"Brown Regular";
+	font-style:normal;
+	src:url(../fonts/brown-regular-webfont.eot);
+	src:url(../fonts/brown-regular-webfont.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/brown-regular-webfont.woff) format('woff'),
+	url(../fonts/brown-regular-webfont.ttf) format('truetype'),
+	url(../fonts/brown-regular-webfont.svg#web) format('svg')
+}
+@font-face{
+	font-family:"Brown Bold";
+	font-style:normal;
+	src:url(../fonts/brown-bold-webfont.eot);
+	src:url(../fonts/brown-bold-webfont.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/brown-bold-webfont.woff) format('woff'),
+	url(../fonts/brown-bold-webfont.ttf) format('truetype'),
+	url(../fonts/brown-bold-webfont.svg#web) format('svg')
+}
+@font-face{
+	font-family: "Brown Regular Italic";
+	font-style:normal;
+	src:url(../fonts/brown-regular-italic-webfont.eot);
+	src:url(../fonts/brown-regular-italic-webfont.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/brown-regular-italic-webfont.woff) format('woff'),
+	url(../fonts/brown-regular-italic-webfont.ttf) format('truetype'),
+	url(../fonts/brown-regular-italic-webfont.svg#web) format('svg')
+}
+@font-face {
+	font-family: "Hybrea";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/hybrea.eot");
+	src: url("../fonts/hybrea.eot") format("embedded-opentype"),
+	url("../fonts/hybrea.woff2") format("woff2"),
+	url("../fonts/hybrea.woff") format("woff"),
+	url("../fonts/hybrea.ttf") format("truetype"),
+	url("../fonts/hybrea.svg") format("svg");
+}
+
+/*custom*/
+a{
+	outline: none;
+}
+.init-layout .img-section{
+	min-height: 100vh;
+	background-color: #3949AB;
+	background: url("../img/svg/login-page-image.svg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.init-layout .img-section .img-caption{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 5px 25px;
+	min-width: 380px;
+}
+.init-layout .img-section .img-caption .caption-title {
+	color: #ffffff;
+	font-family: Hybrea, Open Sans, sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+.init-layout .img-section .img-caption .caption-text {
+	color: #e6e6e6;
+	font-family: Brown Light, Open Sans, sans-serif;
+	font-size: 17px !important;
+	max-width: 500px;
+}
+.init-layout .auth-section{
+	background-color: #ffffff;
+	min-height: 100vh;
+	height: 100%;
+}
+.init-layout .auth-section .auth-inputs{
+	display: table;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+}
+.auth-form .btn{
+	color: #3949AB;
+	border-radius: 0;
+	border-color:  #3949AB;
+	text-transform: uppercase;
+}
+.auth-form .btn:hover{
+	color: #ffffff;
+	background: #3949AB;
+}
+.auth-footer {
+	position: absolute;
+	bottom: 0;
+	padding: 15px 30px;
+	width: 100%;
+}
+.auth-footer span{
+	color:#888ad8;
+	position: absolute;
+	right: 36px;
+	bottom: 16px;
+	font-size: 12px;
+}
+.form-control {
+    border-radius: 0;
+    border-color: #3949AB;
+    color: #3949AB !important;
+}
+.auth-title{
+	color:  #3949AB;
+	font-family: Brown Bold, Open Sans, sans-serif;
+	font-size: 30px;
+	font-weight: 100;
+	/*text-transform: uppercase;*/
+}
+.auth-sub-text{
+	color:#888ad8;
+	font-size: 12px;
+	line-height: 10px;
+}
