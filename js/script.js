@@ -14,18 +14,9 @@
 		$( ".nav-item" ).mouseleave(function() {
 			a.addClass("active");
 		});
-	/*
-		var b = $("#bs-navbar li.active");
-		$("#bs-navbar").mouseenter(function(){
-			b.removeClass("active");
-		});
 
-		$("#bs-navbar").mouseleave(function(){
-			b.addClass("active");
-		});
-		*/
 		// toggle search
-		$("#search-icon").click(function() {
+		$(".search-icon a").click(function() {
 			$(".search-form").addClass("fade-slide-in-down");
 		});
 		$("#close-search-form").click(function(){
